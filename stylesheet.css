@@ -19,6 +19,10 @@ img.hspc {
 li.hspc {
   vertical-align: middle;
 }
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
 ul {
     list-style-type: none;
     margin: 0;
