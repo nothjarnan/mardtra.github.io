@@ -8,11 +8,13 @@ a:visited {
 body, html {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
+
 }
 li a:hover {
-    background-color:#09F;
+  background-color:#09F;
 	border: 2px solid red;
-    border-radius: 12px;
+  border-radius: 12px;
 	border-color:#09F;
 	box-shadow: 0px 3px 6px 1px #444;
 }
@@ -34,12 +36,8 @@ ul {
     overflow: hidden;
     background-color: #0094E5;
     position: fixed;
-    top: 0;
+    top: 0px;
     width: 100%;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
 }
 li a {
     display: block;
