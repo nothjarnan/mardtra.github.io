@@ -102,7 +102,7 @@ ul.topnav li.icon {display: none;}
   }
 }
 @media screen and (max-width:960px) {
-  ul.topnav.responsive {position: relative; z-index: 1; height: 100%; position: absolute; top: 0px;}
+  ul.topnav.responsive {position: fixed; z-index: 1; height: 90%; top: 15px;}
   ul.topnav.responsive li.icon {
     position: absolute;
     right: 0;
