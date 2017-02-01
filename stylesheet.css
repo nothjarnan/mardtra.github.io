@@ -8,17 +8,15 @@ a:visited {
 body, html {
   margin: 0;
   padding: 0;
+	font-family: 'Lato', sans-serif;
 }
 li a:hover {
-<<<<<<< HEAD
   background-color:#09F;
 	border: 0px;
   border-radius: 6px;
-=======
-    background-color:#09F;
+  background-color:#09F;
 	border: 2px solid red;
-    border-radius: 6px;
->>>>>>> cbb2fd2bf3e039b7e2b2d0089e71b9f7bd3959c3
+  border-radius: 6px;
 	border-color:#09F;
 	box-shadow: 0px 3px 6px 1px #444;
 }
