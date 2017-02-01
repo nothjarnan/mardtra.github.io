@@ -12,11 +12,13 @@
   <script>
       function respond() {
         var x = document.getElementById("navigation");
-
+        var logo = document.getElementById("logo");
         if (x.className === "topnav") {
             x.className += " responsive";
+            logo.height = "35px";
         } else {
             x.className = "topnav";
+            logo.height = "70px";
         }
     }
   </script>
@@ -24,10 +26,10 @@
 <header>
   <ul id="navigation" class="topnav" style="box-shadow: 0 2px 5px rgba(0,0,0,.26);">
     <div id="logo">
-      <li onclick="" class="hspc"><img src="mårdträ_test.png" height="70px"></li>
+      <li onclick="" class="hspc"><img id="logo" src="mårdträ_test.png" height="70px" width="auto"></li>
     </div>
     <div id="item_divider">
-      <li class="icon"> <a style="color: #fff;" onclick="respond();" > <img src="assets/ic_menu_black_24dp_2x.png"> </a> </li>
+      <li class="icon"> <a style="color: #fff;" onclick="respond();" > <img src="assets/ic_menu_black_24dp_2x.png" width="24px" height="24px" vertical-align="middle"> </a> </li>
       <li class="Item"> <a href="index.html" style="color: #fff;" > Embellage </a> </li>
       <li class="Item"> <a href="index.html" style="color: #fff;" > Hyvleri </a> </li>
       <li class="Item"> <a href="index.html" style="color: #fff;" > Skog </a> </li>
