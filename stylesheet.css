@@ -1,38 +1,16 @@
-p {
-  font-family: 'Open Sans', sans-serif;
-}
-h1 {
-  font-family: 'Open Sans', sans-serif;
-}
-h2 {
-  font-family: 'Open Sans', sans-serif;
-}
-h3 {
-  font-family: 'Open Sans', sans-serif;
-}
-h4 {
-  font-family: 'Open Sans', sans-serif;
-}
-h5 {
-  font-family: 'Open Sans', sans-serif;
-}
-h6 {
-  font-family: 'Open Sans', sans-serif;
-}
-a {
-  color: inherit;
-  font-family: 'Open Sans', sans-serif;
-}
+a
+{
+	color:#FFF;
+	}
 a:visited {
     color: white;
-    font-family: 'Open Sans', sans-serif;
 }
 body, html {
   margin: 0;
   padding: 0;
 }
 li a:hover {
-    background-color: #0075AF;
+    background-color:#09F;
 }
 img.hspc {
   vertical-align: middle;
@@ -62,20 +40,14 @@ li a {
     padding: 16px 18px;
     text-decoration: none;
 }
-li a.topkek {
+li a.item_divider {
     display: block;
     color: inherit;
     text-align: center;
     padding: 23px 23px;
     text-decoration: none;
 }
-li.kek {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: none;
-    text-decoration: none;
-}
+
 li.Item {
     display: block;
     text-align: center;
