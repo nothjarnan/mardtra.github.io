@@ -7,6 +7,14 @@
   <link rel="icon" href="favico.png" type="image/x-icon"/>
   <link rel="stylesheet" href="stylesheet.css" type="text/css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="script/parallax.js-1.4.2/parallax.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <script>
@@ -21,24 +29,38 @@
             logo.height = "70px";
         }
     }
+    var num = 15; //number of pixels before modifying styles
+
+    $(window).bind('scroll', function () {
+        //console.log(num + " - " + $(window).scrollTop());
+        if ($(window).scrollTop() > num) {
+            //console.log("dun did it");
+            $('navbar').addClass('fixed');
+        } else {
+            //console.log("dun fucked up");
+            $('navbar').removeClass('fixed');
+        }
+    });
   </script>
 </head>
 <header>
-  <ul id="navigation" class="topnav" style="box-shadow: 0 2px 5px rgba(0,0,0,.26);">
-    <div id="logo">
-      <li onclick="" class="hspc"><img id="logo" src="mårdträ_test.png" height="70px" width="auto"></li>
-    </div>
-    <div id="item_divider">
-      <li class="icon"> <a style="color: #fff;" onclick="respond();" > <img src="assets/ic_menu_black_24dp_2x.png" width="24px" height="24px" vertical-align="middle"> </a> </li>
-      <li class="Item"> <a href="index.html" style="color: #fff;" > Embellage </a> </li>
-      <li class="Item"> <a href="index.html" style="color: #fff;" > Hyvleri </a> </li>
-      <li class="Item"> <a href="index.html" style="color: #fff;" > Skog </a> </li>
-      <li class="Item"> <a href="index.html" style="color: #fff;" > Personal </a> </li>
-      <li class="Item"> <a href="index.html" style="color: #fff;" > Historik </a> </li>
-      <li class="Item"> <a href="index.html" style="color: #fff;" > Karta </a> </li>
-    </div>
-    <br>
-  </ul>
+  <div id="navbar">
+    <ul id="navigation" class="topnav" style="box-shadow: 0 2px 5px rgba(0,0,0,.26);">
+      <div id="logo">
+        <li onclick="" class="hspc"><img id="logo" src="mårdträ_test.png" height="70px" width="auto"></li>
+      </div>
+      <div id="item_divider">
+        <li class="icon"> <a style="color: #fff;" onclick="respond();" > <img src="assets/ic_menu_black_24dp_2x.png" width="24px" height="24px" vertical-align="middle"> </a> </li>
+        <li class="Item"> <a href="index.html" style="color: #fff;" > Embellage </a> </li>
+        <li class="Item"> <a href="index.html" style="color: #fff;" > Hyvleri </a> </li>
+        <li class="Item"> <a href="index.html" style="color: #fff;" > Skog </a> </li>
+        <li class="Item"> <a href="index.html" style="color: #fff;" > Personal </a> </li>
+        <li class="Item"> <a href="#historik" style="color: #fff;" > Historik </a> </li>
+        <li class="Item"> <a href="index.html" style="color: #fff;" > Karta </a> </li>
+      </div>
+      <br>
+    </ul>
+  </div>
 </header>
 <body>
   <div id="sContent">
@@ -46,7 +68,7 @@
     <br>
     <br>
     <div id="innerContent" style="margin-left: 10%; margin-right:10%;">
-      <center> <h1> Mårdträ <h1> </center>
+      <center> <h1 id="_whoarewe"> Vilka är vi? <h1> </center>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec faucibus diam. Aenean vulputate felis non velit consequat, eget fermentum leo viverra. Pellentesque ut pretium augue. Phasellus a hendrerit ex, a efficitur tellus. Mauris fringilla augue ut viverra viverra. Praesent a nibh posuere, blandit velit id, vestibulum tellus. Vestibulum at felis efficitur, rutrum mauris pulvinar, commodo libero. Phasellus suscipit a felis id venenatis. Aliquam bibendum cursus purus at dignissim. Ut nec tempor nibh.
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis mollis nisi, a auctor felis finibus non. In finibus mi pulvinar purus blandit, sed convallis ex lacinia. Suspendisse id eros tellus. Nullam pulvinar vestibulum mollis. Phasellus dignissim nisi pellentesque congue efficitur. Nullam dapibus vitae risus quis tincidunt. Donec sed ligula nec nibh consequat viverra id eu nisi. Duis mattis mi enim, vitae lobortis ante rhoncus vel. Nunc ac sapien id urna interdum suscipit vitae quis sem. Morbi sagittis lectus vitae accumsan eleifend.
       <br> <br>
@@ -59,13 +81,13 @@
     <br>
     <br>
     <div id="innerContent" style="margin-left: 10%; margin-right:10%;">
-      <center> <h1> Vad vi gör <h1> </center>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec faucibus diam. Aenean vulputate felis non velit consequat, eget fermentum leo viverra. Pellentesque ut pretium augue. Phasellus a hendrerit ex, a efficitur tellus. Mauris fringilla augue ut viverra viverra. Praesent a nibh posuere, blandit velit id, vestibulum tellus. Vestibulum at felis efficitur, rutrum mauris pulvinar, commodo libero. Phasellus suscipit a felis id venenatis. Aliquam bibendum cursus purus at dignissim. Ut nec tempor nibh.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis mollis nisi, a auctor felis finibus non. In finibus mi pulvinar purus blandit, sed convallis ex lacinia. Suspendisse id eros tellus. Nullam pulvinar vestibulum mollis. Phasellus dignissim nisi pellentesque congue efficitur. Nullam dapibus vitae risus quis tincidunt. Donec sed ligula nec nibh consequat viverra id eu nisi. Duis mattis mi enim, vitae lobortis ante rhoncus vel. Nunc ac sapien id urna interdum suscipit vitae quis sem. Morbi sagittis lectus vitae accumsan eleifend.
-      <br> <br>
-      Maecenas magna enim, imperdiet vel nisl a, efficitur rutrum lectus. Nam maximus, augue sit amet tincidunt porta, lorem elit pellentesque risus, eget interdum orci est quis leo. In pretium tincidunt leo vel finibus. Vestibulum malesuada sodales vestibulum. Morbi vel urna id elit ullamcorper ultrices gravida nec lorem. Etiam ligula nulla, tempus sed varius vitae, semper et ex. Aliquam euismod volutpat porttitor. Praesent quiz malesuada lorem. Suspendisse vitae velit penis. Praesent luctus tellus id nibh lobortis luctus. Maecenas vel egestas odio.
-      Vestibulum aliquam egestas ultricies. In finibus tempor sem, id volutpat quam porta vitae. Nulla ante elit, facilisis id luctus et, efficitur at quam.<br> <br> Maecenas vehicula lacus quis enim rhoncus, eget hendrerit lacus egestas. Nunc laoreet commodo porta. Suspendisse vitae sem cursus, posuere purus tincidunt, ultrices nunc. Nam ac lobortis enim. Suspendisse eu lacinia massa. Duis blandit purus vel nisl mattis, ut viverra enim eleifend. Praesent sit amet tincidunt ipsum.
-      Nam id nibh ac libero tempor volutpat et sed nibh. Quisque aliquam tristique velit, et maximus dui venenatis a. Pellentesque vestibulum condimentum massa in pharetra. Phasellus a placerat risus. Proin justo enim, hendrerit et porttitor id, semper a erat. Duis ex mi, sagittis vel pulvinar sed, efficitur ut mauris. Nam sapien ipsum, facilisis in sapien in, ultrices volutpat arcu. Nullam sit amet ex enim. Praesent porta, mauris vel bibendum blandit, mi arcu fermentum urna, vel feugiat diam massa vel risus. Curabitur mattis risus et eros hendrerit imperdiet. Nam vestibulum sapien vitae cursus placerat. Aenean eu est tempus nulla tristique tincidunt at vitae lacus. Mauris lectus urna, congue sit amet consequat sagittis, faucibus at risus. Praesent consequat malesuada erat ut ultrices. Nullam at fringilla neque, eget lacinia mi. Donec eu tortor eget sem finibus efficitur nec et neque.
+      <div id="historik">
+        <br>
+      </div>
+      <center> <h1> Historik <h1> </center>
+        Företaget Mårdträ har sitt ursprung i byn Mårdshyttan,som ligger vid sjön Usken norr om Lindesberg. Här startade Thure Eriksson i slutet av 1940-talet ett träförädlingsföretag som under åren omfattat både såg och hyvleri, emballagetillverkning och byggmaterialhandel.
+  När sonen Thomas med fru Kajsa tog över verksamheten under 1990-talet delades verksamheten upp i två företag;Thure Erikssons Trävaror som stod för bygg-materialhandeln och Mårdträ som svarade för produktionen. <br> <br> Företagen hade då även etablerat sig i Lindesberg och sågverksamheten var sedan länge nedlagd.
+  2004 såldes byggmaterialhandeln, och idag finns endast Mårdträ AB kvar i familjen Erikssons ägo.
     </div>
     <br>
     <br>
