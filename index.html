@@ -18,27 +18,20 @@
   <script src="script/parallax.js-1.4.2/parallax.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <script>
-      function respond() {
-        var x = document.getElementById("navigation");
-        var logo = document.getElementById("logo");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-            logo.height = "35px";
-        } else {
-            x.className = "topnav";
-            logo.height = "70px";
-        }
-    }
-    var num = 15; //number of pixels before modifying styles
-
-    $(window).bind('scroll', function () {
-        //console.log(num + " - " + $(window).scrollTop());
+    var animsallowed = false
+    var num = 135; //number of pixels before modifying styles
+    $(window).on('scroll', function () {
+        console.log(num + " - " + $(window).scrollTop());
         if ($(window).scrollTop() > num) {
             console.log("dun did it");
-            $('navbar').addClass('fixed');
+            //$("#navbar").clearQueue();
+            $('#navbar').fadeTo(250,0.5);
         } else {
-            //console.log("dun fucked up");
-            $('navbar').removeClass('fixed');
+          if($(window).scrollTop() < num) {
+            console.log("dun did it2");
+            $("#navbar").clearQueue();
+            $("#navbar").fadeTo(250,.95);
+          }
         }
     });
   </script>
@@ -78,10 +71,10 @@
     </div>
     <br>
     <div class="parallax-window" data-parallax="scroll" data-image-src="assets/mard1.JPG" androidFix="true" iosFix="true"></div>
-    <br>
+    <br id="historik">
     <br>
     <div id="innerContent" style="margin-left: 10%; margin-right:10%;">
-      <div id="historik">
+      <div>
         <br>
       </div>
       <center> <h1> Historik <h1> </center>
