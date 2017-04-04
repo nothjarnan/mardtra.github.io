@@ -36,6 +36,20 @@ nav {
 
 
 }
+div.SiteContent {
+	margin-right: 25px;
+	margin-left: 25px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	min-height: 50px;
+}
+div.SiteInnerContent {
+	margin-right: 75px;
+	margin-left: 75px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 1.1em;
+}
 li a {
     display: block;
     color: white;
