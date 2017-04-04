@@ -10,6 +10,8 @@ body, html {
   padding: 0;
 	font-family: 'Lato', sans-serif;
 }
+
+
 li a:hover {
 	opacity: 1;
 	filter: alpha(opacity=100); /* For IE8 and earlier */
@@ -17,8 +19,6 @@ li a:hover {
 	border: 0px;
   border-radius: 6px;
   background-color:#09F;
-  border-radius: 6px;
-	border-color:#09F;
 	/*box-shadow: 0px 3px 6px 1px #444; */
 }
 img.hspc {
@@ -64,6 +64,11 @@ li a.item_divider {
     padding: 10px 10px;
     text-decoration: none;
 }
+
+.kontakt1{
+	margin:20px;
+	
+	}
 
 li.Item {
     display: block;
