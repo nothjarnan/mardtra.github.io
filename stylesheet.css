@@ -107,7 +107,7 @@ ul.topnav li.icon {display: none;}
 	left: 0;
 }
 @media screen and (max-width:960px) {
-  ul.topnav.responsive {position: auto; z-index: 1; height: 90%; top: 15px;}
+  ul.topnav.responsive {position: auto; z-index: 1; height: 90%; top: 0px;}
   ul.topnav.responsive li.icon {
     position: absolute;
     right: 0;
