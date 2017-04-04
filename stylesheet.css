@@ -39,8 +39,8 @@ nav {
 div.SiteContent {
 	margin-right: 25px;
 	margin-left: 25px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 	min-height: 50px;
 }
 div.SiteInnerContent {
@@ -67,7 +67,7 @@ li a.item_divider {
 
 .kontakt1{
 	margin:20px;
-	
+
 	}
 
 li.Item {
