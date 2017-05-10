@@ -1,150 +1,115 @@
-a
-{
-	color:#FFF;
-}
-a:visited {
-    color: white;
-}
-body, html {
-  margin: 0;
-  padding: 0;
-	font-family: 'Lato', sans-serif;
-}
+@charset "utf-8";
+/* CSS Document */
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding:;
-    text-decoration: none;
-}
+* {
+		margin: 0;
+		padding: 0;
+	
+		}
+	
+	body, html, {
+  	margin: 0px;
+  	padding: 0px;
+		width:100%;
+		font-family: 'Lato', sans-serif;
+		}
+		
+	.mobile {
+			display:none;
+		}
 
-li a:hover {
-	opacity: 1;
-	filter: alpha(opacity=100); /* For IE8 and earlier */
-  /*background-color:#09F;
-	border: 0px;
-  border-radius: 6px;
-  background-color:#09F;*/
-	border-bottom:solid;
-	border-color:#09F;
-	cursor:pointer;
-}
+	.desktop nav ul {
+		position:fixed;
+		display:block;
+		width:100%;
+		height:100px;
+		background-color:#333;
+		opacity:0.9;
+		margin:0;
+		box-shadow:0px 3px 8px 1px rgba(75,75,75,250);
+		}
 
-.all {
-	box-shadow:0px 4px 8px 2px rgba(200,200,200,200);
-	}
+	.desktop nav ul li {
+		list-style-type:none;
+		display:inline-block;
+		margin:4px 16px;
+		padding: 15px 24px;
+		vertical-align:middle;
+		}
+	
+	.desktop nav ul li:hover {
+		text-decoration:underline;
+		}
+	
+	.desktop nav ul li a {
+		color:#FFF;
+		text-decoration:none;
+		font-size:1.2em;
+		}
 
-li a:active {
-	border-color:#00F;
-	}
-img.hspc {
-  vertical-align: middle;
-  hspace: 0;
-}
-li.hspc {
-  vertical-align: middle;
-}
-.parallax-window {
-    min-height: 400px;
-    background: transparent;
-}
-nav {
+	.logo img {
+		width:175px;
+		margin:0;
+		}
 
+	.parallax-window {
+	  min-height: 450px;
+  	background: transparent;
+		}
 
-}
-div.SiteContent {
-	margin-right: 25px;
-	margin-left: 25px;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	min-height: 110px;
-}
-div.SiteInnerContent {
-	margin-right: 75px;
-	margin-left: 75px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	font-size: 1.1em;
-}
+	.SiteContent {
+		margin-right: 25px;
+		margin-left: 25px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		min-height: 110px;
+		}
 
-li a.item_divider {
-    display: block;
-    color: inherit;
-    text-align: center;
-    padding: 10px 10px;
-    text-decoration: none;
-}
+	.SiteInnerContent {
+		margin-right: 75px;
+		margin-left: 75px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-size: 1.1em;
+		}
 
-.kontakt1{
-	margin:20px;
+	.maps-container {
+		margin-top:20px;
+		width:40%;
+		height:400px;
+		background-color:#999;
+		}
 
-	}
+	iframe {
+		width:100%;
+		height:100%;
+		}
 
-li {
-	float:none;
+	.bottom {
+		margin-left: 32%; 
+		margin-right: 32%; 
+		padding-top: 30px; 
+		padding-bottom: 20px;
+		font-size:1.1em;
+		}
 
-}
-/* Remove margins and padding from the list, and add a black background color */
-ul.topnav {
-	opacity: .8;
-	 filter: alpha(opacity=70); /* For IE8 and earlier */
-	 list-style-type: none;
-	 margin: 0;
-	 padding: 0;
-	 overflow: hidden;
-	 background-color: #333;
-	 position: fixed;
-	 top: 0px;
-	 width: 100%;
-	 height:80px;
-	 box-shadow:0px 3px 8px 1px rgba(100,100,100,100);
-}
+	footer {
+		background-color: #EEE; 
+		margin-left:0px; 
+		margin-bottom: 0px; 
+		margin-right: 0px;
+		}
 
-/* Float the list items side by side */
-ul.topnav li {float: left;}
+	.box {
+		width:100%;
+		display:block;
+		padding-top:175px;
+		}
 
-/* Style the links inside the list items */
-ul.topnav li a {
-	 display: inline-block;
-	 color: #f2f2f2;
-	 text-align: center;
-	 padding: 6px 14px;
-	 text-decoration: none;
-	 font-size: 17px;
-	 margin-top:20px;
-}
-
-/* Change background color of links on hover */
+	
 
 
-/* Hide the list item that contains the link that should open and close the topnav on small screens */
-ul.topnav li.icon {display: none;}
-@media screen and (max-width:960px) {
-  ul.topnav li:not(:first-child) {display: none;}
-  ul.topnav li.icon {
-    float: right;
-    display: inline-block;
-  }
-}
-/*.fixed {
-	position: fixed;
-	top: 0;
-	left: 0;
-}*/
-@media screen and (max-width:960px) {
-  ul.topnav.responsive {position: auto; z-index: 1; height: 90%; top: 0px;}
-  ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  ul.topnav.responsive li {
-    float: none;
-    display: inline;
-  }
-  ul.topnav.responsive li a {
-    display: block;
-    text-align: center;
-  }
-}
+
+
+
+

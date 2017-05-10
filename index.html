@@ -1,129 +1,206 @@
-
-<!DOCTYPE html>
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <title> Mårdträ </title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="favico.png" type="image/x-icon"/>
-  <link rel="stylesheet" href="stylesheet.css" type="text/css"/>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <!-- Latest compiled and minified CSS -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MårdTrä</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css"  />
+<link rel="stylesheet" type="text/css" href="mobile.css"  />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="script/parallax.js-1.4.2/parallax.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-  ga('create', 'UA-96794534-1', 'auto');
-  ga('send', 'pageview');
 
-</script>
-  <script>
-    var animsallowed = false
-    var num = 135; //number of pixels before modifying styles
-
-    $(window).on('scroll', function () {
-        console.log(num + " - " + $(window).scrollTop());
-        if ($(window).scrollTop() > num) {
-            console.log("dun did it");
-            //$("#navbar").clearQueue();
-            $('#navbar').fadeTo(250,0.5);
-        } else {
-          if($(window).scrollTop() < num) {
-            console.log("dun did it2");
-            $("#navbar").clearQueue();
-            $("#navbar").fadeTo(250,.95);
-          }
-        }
-    });
-    function respond() {
-      var x = document.getElementById("navigation");
-
-      var logo = document.getElementById("logo");
-      if (x.className === "topnav") {
-          x.className = "topnav responsive";
-          logo.height = "35px";
-      } else {
-          x.className = "topnav";
-          logo.height = "70px";
-      }
-    }
-  </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="parallax.js"></script>
 </head>
+
 <body>
-  <div id="navbar">
-    <ul id="navigation" class="topnav">
-      <div id="logo">
-        <li class="hspc"><img id="logo" src="mårdträ_test.png" height="70px" width="auto"></li>
-      </div>
-      <div id="item_divider">
-        <li class="icon"> <a style="color: #fff;" onClick="respond();" > <img src="assets/ic_menu_black_24dp_2x.png" width="24px" height="24px" vertical-align="middle"> </a> </li>
-        <li> <a href="#produkter"> Produkter </a> </li>
-        <li> <a href="#personal"> Personal </a> </li>
-        <li> <a href="#kontakt"> Kontakt </a> </li>
-        <li> <a href="#omoss"> Om oss </a> </li>
-        <li> <a href="#aktuellt"> Aktuellt </a> </li>
-        <li> <a href="#karta"> Karta </a> </li>
-      </div>
-      <br>
-    </ul>
-  </div>
-  <div id=produkter></div> <!-- scrollar sidan till "Produkter" !-->
-	<div class="all">
-    <div class="parallax-window" data-parallax="scroll" data-image-src="assets/mard1.JPG">
-    </div>
-    <div class="SiteContent">
-      <h1> <center> Produkter </center> </h1>
-      <div class="SiteInnerContent">
-        FIXME: lägg till saker här
-    </div>
-    <div id="personal"></div> <!-- scrollar sidan till "Personal" !-->
-    <div class="SiteContent">
-  	</div>
-      <h1> <center> Personal </center> </h1>
-      <div id="kontakt"></div> <!-- scrollar sidan till "Kontakt" !-->
-      <div class="SiteInnerContent">
-        FIXME: lägg till saker här
-      </div>
-      <div class="SiteInnerContent">
-        <h2> Kontakt </h2>
-        <p> <b>tel</b>: 0581-806 30, 070-3040880 </p>
-        <p> <b>fax</b>: 0581-806 31 </p>
-        <p> <b>e-post</b>: info@mardtra.se </p>
-      </div>
-    </div>
-  	<div id="omoss"></div> <!-- scrollar sidan till "Om oss" !-->
-    <div class="SiteContent">
+	
+  <!-- desktopläge !-->
   
-      <h1> <center> Om oss </center> </h1>
-      <div class="SiteInnerContent">
-        Företaget Mårdträ har sitt ursprung i byn Mårdshyttan,som ligger vid sjön Usken norr om Lindesberg. Här startade Thure Eriksson i slutet av 1940-talet ett träförädlingsföretag som under åren omfattat både såg och hyvleri, emballagetillverkning och byggmaterialhandel.
+	<div class="desktop">
+  	<nav>
+			<ul>
+      	<li class="logo"><a href="#top"><img src="mårdträ_test.png" /></a></li>
+        <li><a href="#produkter"> Produkter </a></li>
+      	<li><a href="#personal"> Personal </a></li>
+      	<li><a href="#kontakt"> Kontakt </a></li>
+      	<li><a href="#omoss"> Om oss </a></li>
+      	<li><a href="#aktuellt"> Aktuellt </a></li>
+      	<li><a href="#karta"> Karta </a></li>
+			</ul>
+    </nav>
+	</div>
+	
+  <!-- mobilläge !-->
+  
+  <div class="mobile">
+  	<nav>
+			<ul>
+      	<span class="glyphicon glyphicon-menu-hamburger burger"></span>
+      	<li class="logo"><img src="mårdträ_test.png" /></li>
+        <li><a href="#produkter"> Produkter </a></li>
+      	<li><a href="#personal"> Personal </a></li>
+      	<li><a href="#kontakt"> Kontakt </a></li>
+      	<li><a href="#omoss"> Om oss </a></li>
+      	<li><a href="#aktuellt"> Aktuellt </a></li>
+      	<li><a href="#karta"> Karta </a></li>
+			</ul>
+    </nav>
+	</div>
+	
+  <div id="top"></div> <!-- scrollar sidan till toppen av sidan !-->
+  
+	<div class="parallax-window" data-parallax="scroll" data-image-src="mard1.JPG">
+  </div>
+  <!-- Parallax funktion som gör så att bakgrunden skrollar i ett eget tempo !-->
+
+
+	<div id=produkter></div> <!-- scrollar sidan till "Produkter" !-->
+  
+  <br><br><br><br><br>
+  
+  <div class="SiteContent">
+  	<h1> <center> Produkter </center> </h1>
+  </div>
+  <div class="SiteInnerContent">
+          	FIXME: lägg till saker här
+  </div>
+  <div class="box"></div>
+  
+  <div id="personal"></div> <!-- scrollar sidan till "Personal" !-->
+  
+  <br><br><br><br><br>
+  
+  <div class="SiteContent">
+  	<h1> <center> Personal </center> </h1>
+  </div>
+  <div class="SiteInnerContent">
+          FIXME: lägg till saker här
+  </div>
+  
+  <div class="box"></div>
+  
+  <div id="kontakt"></div> <!-- scrollar sidan till "Kontakt" !-->
+  
+  <br><br><br><br><br>
+  
+  <div class="SiteInnerContent">
+    <h2> Kontakt </h2>
+    <p> <b>tel</b>: 0581-806 30, 070-3040880 </p>
+    <p> <b>fax</b>: 0581-806 31 </p>
+    <p> <b>e-post</b>: info@mardtra.se </p>
+	</div>
+  
+	<br><br><br><br>
+
+	<div class="parallax-window" data-parallax="scroll" data-image-src="mard-head.JPG">
+  </div>
+	<!-- Parallax funktion som gör så att bakgrunden skrollar i ett eget tempo !-->
+  
+	<div class="box"></div>
+	
+  <div id="omoss"></div> <!-- scrollar sidan till "Om oss" !-->
+  
+  <br><br><br><br><br>
+  
+	<div class="SiteContent">
+	<h1> <center> Om oss </center> </h1>
+  </div>
+  <div class="SiteInnerContent">
+  	<p>
+    	Företaget Mårdträ har sitt ursprung i byn Mårdshyttan,som ligger vid sjön Usken norr 				om Lindesberg. Här startade Thure Eriksson i slutet av 1940-talet ett träförädlingsföretag som under åren omfattat både såg och hyvleri, emballagetillverkning och byggmaterialhandel.
      När sonen Thomas med fru Kajsa tog över verksamheten under 1990-talet delades verksamheten upp i två företag;Thure Erikssons Trävaror som stod för bygg-materialhandeln och Mårdträ som svarade för produktionen. <br> <br> Företagen hade då även etablerat sig i Lindesberg och sågverksamheten var sedan länge nedlagd.
      2004 såldes byggmaterialhandeln, och idag finns endast Mårdträ AB kvar i familjen Erikssons ägo.
-      </div>
+    </p>
+  </div>
+  
+	<div class="box"></div>
+  
+  <div id="aktuellt"></div> <!-- scrollar sidan till "Aktuellt" !-->
+  
+  <br><br><br><br><br>
+  
+  <div class="SiteContent">
+  <h1> <center> Aktuellt </center> </h1>
+	</div>
+  <div class="SiteInnerContent">
+  	FIXME: lägg till saker här
+  </div>
+
+	<div class="box"></div>
+	
+  <div id="karta"></div> <!-- scrollar sidan till "Karta" !-->
+  
+  <br><br><br><br><br>
+  
+	<h1> <center> <u> Karta </u> </center> </h1>
+  
+  <center>
+  	<div class="maps-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2019.680873680879!2d15.241856415885824!3d59.58837638175022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465c49688c5c4247%3A0xb5a739aaac194a0e!2zTcOlcmR0csOkIEFC!5e0!3m2!1ssv!2sse!4v1491996073558" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
+      </iframe>
     </div>
-    	<div id="aktuellt"></div> <!-- scrollar sidan till "Aktuellt" !-->
-    	<h1> <center> Aktuellt </center> </h1>
-      
-      <br><br><br><br><br><br>
-      <div id="karta"></div> <!-- scrollar sidan till "Karta" !-->
-      <h1> <center> Karta </center> </h1>
-  <div style="margin-top: 10px; margin-bottom: 50<px;">
-  </div>
-  <div class="SiteContent" style="background-color: #EEE; margin-left:0px; margin-bottom: 0px; margin-right: 0px;">
-      <div style="margin-left: 33%; margin-right: 33%; padding-top: 20px; padding-bottom: 20px;">
-        <p> test170404-rc1 </p>
-         &copy; Linus Ramneborg & Rasmus Forsberg 2017. All rights reserved.
-         Skapat för Mårdträ AB
-      </div>
-  </div>
+	</center>
+
+	<div class="box"></div>
+	
+  <footer>
+  	<div class="bottom">
+			<p> test170404-rc1 </p>
+         		&copy; Rasmus Forsberg & Linus Remneborg 2017. All rights reserved.
+         		Skapat för Mårdträ AB
+		</div>
+	</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
+</html>
